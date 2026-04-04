@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pido Club | Catálogos Digitales en Tiempo Real</title>
+    
+    <title>Pido Club | Catálogos Digitales Sincronizados con Excel</title>
+    <meta name="description" content="Creá tu catálogo digital con Pido Club. Sincronizá precios y stock en tiempo real desde Excel. Pedidos directos a WhatsApp sin comisiones.">
+    <meta name="keywords" content="catálogo digital, menú QR, ventas por whatsapp, sincronizar excel, Pido Club, stock en tiempo real">
+    
     <style>
         :root {
             --primary: #25d366; /* WhatsApp Green */
@@ -38,7 +42,7 @@
         }
 
         header img {
-            height: 50px; /* Ajuste del tamaño del logo */
+            height: 50px;
             width: auto;
         }
 
@@ -112,10 +116,59 @@
             border: 1px solid rgba(255,255,255,0.2);
         }
 
+        /* Sección FAQ */
+        .faq-section {
+            padding: 80px 5%;
+            background-color: var(--bg-soft);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border-top: 4px solid var(--accent);
+        }
+
+        .faq-item h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            color: var(--dark);
+            line-height: 1.3;
+        }
+
+        .faq-item p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        .faq-category-title {
+            grid-column: 1 / -1;
+            margin-top: 20px;
+            color: var(--accent);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
         .cta-container {
             text-align: center;
             padding: 80px 5%;
-            background: var(--bg-soft);
+            background: white;
         }
 
         .btn-whatsapp {
@@ -144,13 +197,11 @@
             border-top: 1px solid #eee;
         }
 
-        .highlight { color: var(--primary); }
-
-        /* Mobile adjustments */
         @media (max-width: 600px) {
             .hero { padding: 40px 20px; }
             .btn-whatsapp { width: 100%; padding: 18px 20px; }
             .benefit-tag { padding: 20px; }
+            .faq-section { padding: 50px 20px; }
         }
     </style>
 </head>
@@ -199,18 +250,78 @@
     </div>
 </section>
 
+<section class="faq-section">
+    <div class="faq-container">
+        <h2 style="text-align: center; margin-bottom: 10px;">Preguntas Frecuentes</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 40px;">Todo lo que necesitas saber sobre el club.</p>
+        
+        <div class="faq-grid">
+            <div class="faq-category-title">Uso y Configuración</div>
+            <div class="faq-item">
+                <h3>¿Necesito conocimientos técnicos?</h3>
+                <p>No, Pido Club está pensado para que cualquier emprendedor pueda gestionar su negocio sin complicaciones. Nuestra interfaz es 100% amigable.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Cómo activo mi menú digital?</h3>
+                <p>Una vez te das de alta, accedes a la página de carga. A medida que sumas productos, se ven en tu web. Te damos el link y QR sin cargo.</p>
+            </div>
+
+            <div class="faq-category-title">Alcance del Servicio</div>
+            <div class="faq-item">
+                <h3>¿Qué negocios pueden unirse?</h3>
+                <p>Desde gastronomía hasta showrooms y ferreterías. Pido Club se adapta a cualquier catálogo que necesite orden profesional.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Puedo gestionar varias sucursales?</h3>
+                <p>Sí, nuestra plataforma permite escalar tu negocio y centralizar la recepción de pedidos sin importar cuántos puntos tengas.</p>
+            </div>
+
+            <div class="faq-category-title">Comisiones y Planes</div>
+            <div class="faq-item">
+                <h3>¿Cobran comisiones por venta?</h3>
+                <p>Absolutamente no. Pagas un abono fijo y vendes todo lo que quieras; el crecimiento de tu facturación es solo tuyo.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Existe algún costo oculto?</h3>
+                <p>Ninguno. El plan incluye soporte, actualizaciones y alojamiento de tu menú con total transparencia.</p>
+            </div>
+
+            <div class="faq-category-title">Experiencia del Cliente</div>
+            <div class="faq-item">
+                <h3>¿Cómo recibo los pedidos?</h3>
+                <p>Llegan a tu WhatsApp con formato estructurado: productos, subtotal, método de pago y dirección. ¡Listo para despachar!</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿El cliente debe descargar una App?</h3>
+                <p>No. Acceden escaneando el QR o por link, sin ocupar espacio en su celular ni registros tediosos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="cta-container">
-    <h2>No más precios desactualizados.</h2>
+    <h2>¿Listo para profesionalizar tu negocio?</h2>
     <p>Empezá hoy a vender de forma inteligente con <strong>Pido Club</strong>.</p>
     <br>
     <a href="https://wa.me/5491165614612?text=Estoy%20en%20la%20web%20de%20Pido%20Club%2C%20me%20interesa%20obtener%20info%20para%20integrarlo%20a%20mi%20negocio." class="btn-whatsapp">
-        Hablar con un asesor
+        Hablar con un asesor ahora
     </a>
 </section>
 
 <footer>
-    &copy; 2026 Pido Club - Catálogos Digitales Sincronizados.
+    © 2026 Pido Club - Catálogos Digitales Sincronizados.
 </footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "SoftwareApplication",
+  "name": "Pido Club",
+  "operatingSystem": "Web",
+  "applicationCategory": "BusinessApplication",
+  "description": "Plataforma de catálogos digitales sincronizados con Excel y pedidos por WhatsApp."
+}
+</script>
 
 </body>
 </html>
